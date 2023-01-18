@@ -1,0 +1,51 @@
+{
+  "name": "rumorlens",
+  "version": "1.0.0",
+  "author": "",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "build": "node build/build.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "d3": "^6.5.0",
+    "d3-area-label": "^1.5.0",
+    "d3-simple-slider": "^1.10.4",
+    "d3-time-format": "^3.0.0",
+    "qs": "^6.9.6",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "autodll-webpack-plugin": "^0.4.2",
+    "autoprefixer": "^6.7.7",
+    "babel-core": "^6.26.3",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.0.0-beta.14",
+    "install": "^0.13.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "npm": "^6.14.13",
+    "postcss-loader": "^3.0.0",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15.9.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "license": "ISC"
+}
