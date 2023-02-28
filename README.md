@@ -47,3 +47,23 @@ npm run dev
 
 ### Kehan Du([@lele1307](https://github.com/lele1307)): System Architecture
 
+## Citation
+```
+@inproceedings{10.1145/3491101.3519712,
+author = {Wang, Ran and Du, Kehan and Chen, Qianhe and Zhao, Yifei and Tang, Mojie and Tao, Hongxi and Wang, Shipan and Li, Yiyao and Wang, Yong},
+title = {RumorLens: Interactive Analysis and Validation of Suspected Rumors on Social Media},
+year = {2022},
+isbn = {9781450391566},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3491101.3519712},
+doi = {10.1145/3491101.3519712},
+abstract = {With the development of social media, various rumors can be easily spread on the Internet and such rumors can have serious negative effects on society. Thus, it has become a critical task for social media platforms to deal with suspected rumors. However, due to the lack of effective tools, it is often difficult for platform administrators to analyze and validate rumors from a large volume of information on a social media platform efficiently. We have worked closely with social media platform administrators for four months to summarize their requirements of identifying and analyzing rumors, and further proposed an interactive visual analytics system, RumorLens, to help them deal with the rumor efficiently and gain an in-depth understanding of the patterns of rumor spreading. RumorLens integrates natural language processing (NLP) and other data processing techniques with visualization techniques to facilitate interactive analysis and validation of suspected rumors. We propose well-coordinated visualizations to provide users with three levels of details of suspected rumors: an overview displays both spatial distribution and temporal evolution of suspected rumors; a projection view leverages a metaphor-based glyph to represent each suspected rumor and further enable users to gain a quick understanding of their overall characteristics and similarity with each other; a propagation view visualizes the dynamic spreading details of a suspected rumor with a novel circular visualization design, and facilitates interactive analysis and validation of rumors in a compact manner. By using a real-world dataset collected from Sina Weibo, one case study with a domain expert is conducted to evaluate RumorLens. The results demonstrated the usefulness and effectiveness of our approach.},
+booktitle = {Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems},
+articleno = {232},
+numpages = {7},
+keywords = {Location Distribution, Human-Computer Collaboration, Social Media, Feature Projection, Visualization Design, Propagation View, Topic Evolution, Circular Design., Suspected Rumor},
+location = {New Orleans, LA, USA},
+series = {CHI EA '22}
+}
+```
