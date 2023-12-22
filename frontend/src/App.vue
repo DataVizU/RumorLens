@@ -1,53 +1,66 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import Overview from "./components/Overview/OverView.vue";
+import DetailsView from "@/components/Propagation/DetailsView.vue";
+import Projection from "@/components/Projection/ProjectionView.vue";
+import PropagationView from "@/components/Propagation/PropagationView.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div id="body">
+    <div class="left">
+      <div class="top content">
+        <Overview />
+      </div>
+      <div class="bottom content">
+        <Projection />
+      </div>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <div class="right content">
+      <div class="top">
+        <PropagationView />
+      </div>
+      <div class="bottom">
+        <DetailsView />
+      </div>
+    </div>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style scoped lang="scss">
+#body {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+    .top {
+      width: 100%;
+      height: 65%;
+      margin-bottom: 20px;
+    }
+    .bottom {
+      width: 100%;
+      height: 35%;
+    }
+  }
+  .right {
+    width: 50%;
+    height: 100%;
+    > .top {
+      height: 65%;
+    }
+    > .bottom {
+      height: 35%;
+    }
+  }
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.content {
+  background-color: white;
 }
 </style>

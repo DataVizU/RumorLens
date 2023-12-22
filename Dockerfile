@@ -5,4 +5,4 @@ WORKDIR /app
 # RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/ --trusted-host pypi.tuna.tsinghua.edu.cn
 RUN pip install -r requirements.txt
 ENTRYPOINT ["gunicorn"]
-CMD ["main:app", "-b", "0.0.0.0:8080", "-w", "4", "-k", "uvicorn.workers.UvicornWorker"]
+CMD ["main:app", "-b", "0.0.0.0:8080", "-t", "300", "-w", "2", "-k", "uvicorn.workers.UvicornWorker"]

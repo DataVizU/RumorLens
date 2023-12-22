@@ -1,0 +1,21 @@
+export var Legend;
+(function (Legend) {
+  Legend.verticalSpacing = 18;
+  Legend.yOffsets = 45;
+  Legend.xOffsets = 0;
+  Legend.rectVerticalSpacing = 5;
+  Legend.rectYOffsets = 20;
+  Legend.rectXOffsets = 10;
+  Legend.rectLength = 15;
+  Legend.rectR = 5;
+  Legend.textXOffsets = 30;
+  Legend.textYOffsets = 33;
+  Legend.textVerticalSpacing = 5;
+  Legend.textSize = "9pt";
+  Legend.lineXOffsets = 230;
+  Legend.lineY1 = 60;
+  Legend.lineY2 = 340;
+  Legend.lineStrokeWidth = 2;
+  Legend.lineColor = "black";
+  Legend.lineOpacity = 0.3;
+})(Legend || (Legend = {}));
